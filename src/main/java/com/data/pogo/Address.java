@@ -1,10 +1,13 @@
-package com.data.beans;
+package com.data.pogo;
 
 public class Address {
 
-    private final String city;
-    private final String street;
-    private final int building;
+    private String city;
+    private String street;
+    private int building;
+
+    public Address() {
+    }
 
     public Address(String city, String street, int building) {
         this.city = city;

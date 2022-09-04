@@ -1,9 +1,12 @@
-package com.data.beans;
+package com.data.pogo;
 
 public class User {
-    private final int id;
-    private final String name;
-    private final Address address;
+    private int id;
+    private String name;
+    private Address address;
+
+    public User() {
+    }
 
     public User(int id, String name, Address address) {
         this.id = id;
@@ -22,5 +25,4 @@ public class User {
     public Address getAddress() {
         return address;
     }
-
 }
