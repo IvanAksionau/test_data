@@ -1,5 +1,7 @@
 package com.data.pogo;
 
+import java.util.Objects;
+
 public class Address {
 
     private String city;
@@ -25,5 +27,13 @@ public class Address {
 
     public int getBuilding() {
         return building;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Address address = (Address) o;
+        return building == address.building && city.equals(address.city) && street.equals(address.street);
     }
 }
